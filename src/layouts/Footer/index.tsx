@@ -35,11 +35,11 @@ const AppFooter: React.FC<Props> = () => {
               alt="logo-footer"
               className="w-14 h-14"
             />
-            <span>Zero Knowledge Proof</span>
+            <span className="ml-2">Zero Knowledge Proof</span>
           </div>
           <div className="w-full sm:w-1/2 flex justify-center sm:justify-end">
             <Link
-              href="https://twitter.com/JuicyFiNetwork"
+              href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-auto hover:text-yellow-500"
@@ -63,7 +63,7 @@ const AppFooter: React.FC<Props> = () => {
               />
             </Link> */}
             <Link
-              href="https://t.me/juicyfi"
+              href="https://t.me/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-auto hover:text-yellow-500 mx-2"

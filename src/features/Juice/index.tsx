@@ -207,7 +207,7 @@ const Juice: React.FC<Props> = () => {
       <div id="juice" className="h-12 md:h-20 relative" />
       <div className="w-full md:w-11/12 h-full relative mx-auto">
         <h1 className={`app-juice-title`}>
-          Facilitating Swift Cryptocurrency Exchanges with JuicyFi
+          Facilitating Swift Cryptocurrency Exchanges
         </h1>
 
         <div className="h-12 md:h-20 relative" />
@@ -271,7 +271,7 @@ const Juice: React.FC<Props> = () => {
                 }  rounded-tl-none rounded-bl-none border-l-0 !bg-transparent text-white`}
                 onClick={() => onChangeTypeMixer(MixerType.FLOAT)}
               >
-                Float
+                Floating
               </Button>
             </div>
           </div>

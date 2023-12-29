@@ -39,6 +39,11 @@ export const AppTokenomics: React.FC<Props> = () => {
           Tokenomics
         </div>
 
+        <List className="text-base lg:text-2xl xl:text-3xl font-semibold xs:px-2 sm:px-0 text-center mt-4">
+          <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
+            CA : -
+          </ListItem>
+        </List>
         <div className="w-full md:w-3/4 flex flex-wrap items-center justify-between mt-6 mb-3 mx-auto">
           <div className="w-full sm:w-1/2">
             <Image
@@ -63,22 +68,20 @@ export const AppTokenomics: React.FC<Props> = () => {
               <Divider className="my-1 text-cyan-500" />
 
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-                ⦿ Liquidity : 90 %
+                ⦿ Liquidity : 80 %
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-                ⦿ Staking : 5 %
+                ⦿ Staking : 10 %
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
                 ⦿ KOLs : 5 %
               </ListItem>
+              <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
+                ⦿ CEX Reserve : 5 %
+              </ListItem>
             </List>
           </div>
         </div>
-        <List className="text-base lg:text-2xl xl:text-3xl font-semibold xs:px-2 sm:px-0 text-center mb-4">
-          <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-            CA : -
-          </ListItem>
-        </List>
       </div>
     </>
   );

@@ -48,7 +48,7 @@ export const AppFeature: React.FC<Props> = () => {
         </h1>
 
         <div className="w-full md:w-11/12 flex flex-wrap justify-between mx-auto mt-10 mb-5">
-          <Card className="bg-transparent shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border-2 border-secondary">
+          <Card className="bg-transparent shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border-2 border-secondary mb-3 sm:mb-0">
             {/* <Image
               src={JuiceLogo}
               alt="juice-logo"
@@ -63,7 +63,7 @@ export const AppFeature: React.FC<Props> = () => {
               transfers across platforms with enhanced privacy and reliability
             </CardBody>
             <CardFooter className="pt-0 mx-auto">
-              <Link href="/juice">
+              <Link href="/bridge">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
                   className="bg-night-sky hover:bg-twilight-horizon active:bg-twilight-horizon focus:bg-twilight-horizon text-white mt-4 shadow-sunny hover:shadow-rose"
@@ -74,7 +74,7 @@ export const AppFeature: React.FC<Props> = () => {
             </CardFooter>
           </Card>
 
-          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold">
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold mb-3 sm:mb-0">
             {/* <Image
               src={StakeLogo}
               alt="stake-logo"
@@ -101,7 +101,7 @@ export const AppFeature: React.FC<Props> = () => {
             </CardFooter>
           </Card>
 
-          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold sm:mt-4">
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold sm:mt-4 mb-3 sm:mb-0">
             {/* <Image
               src={AuditLogo}
               alt="audit-logo"

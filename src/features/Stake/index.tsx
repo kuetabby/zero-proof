@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { NumberFormatValues, NumericFormat } from "react-number-format";
 import {
   Card,
@@ -26,7 +26,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 
 import "./style.css";
 
-const stakingContractAddress = "0x735f805E1067d594D65537E073a2567BfB4AFEbD";
+const stakingContractAddress = "";
 
 interface Props {}
 

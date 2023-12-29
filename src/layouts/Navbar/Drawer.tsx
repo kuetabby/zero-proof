@@ -78,7 +78,7 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
           style={{ fontSize: 20 }}
         />
         <DrawerHeader className="bg-dark-main text-3xl">
-          <span className="navbar-title">JuicyFi</span>
+          <span className="navbar-title">ZK Proof</span>
         </DrawerHeader>
 
         <DrawerBody className="bg-dark-main">

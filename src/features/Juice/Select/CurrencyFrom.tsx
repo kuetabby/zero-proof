@@ -76,8 +76,8 @@ export const SelectCurrencyFrom: React.FC<Props> = ({
             className={`w-full mb-4 bg-dark-secondary cursor-pointer ${
               state.currency === item.ticker &&
               state.network === item.network &&
-              "bg-twilight-horizon"
-            } bg-starry-night`}
+              "bg-twilight-horizon border-none"
+            } bg-night-sky`}
             key={item.legacyTicker}
             onClick={() => onSelect(item)}
           >
