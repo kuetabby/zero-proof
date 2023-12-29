@@ -1,0 +1,40 @@
+.homepage-container {
+  @apply w-full h-full px-2 sm:px-4 m-auto pb-4;
+  /* @apply w-full h-full m-auto relative; */
+  @apply max-w-screen-xl;
+}
+
+.app-name,
+.app-features,
+.app-findus,
+.card-features-header {
+  @apply bg-twilight-horizon;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app-name {
+  @apply mx-0 sm:mx-2 text-3xl md:text-4xl;
+}
+
+.app-features {
+  @apply text-3xl sm:text-center font-extrabold;
+}
+
+.juicyfi-tokenomics,
+.app-findus {
+  @apply text-3xl sm:text-center font-extrabold text-white;
+}
+
+.card-features-header {
+  @apply font-bold text-2xl sm:text-3xl text-center;
+}
+
+.card-features-body-subtitle {
+  @apply mb-3;
+  @apply bg-white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
