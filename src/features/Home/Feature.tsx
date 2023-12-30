@@ -101,7 +101,7 @@ export const AppFeature: React.FC<Props> = () => {
             </CardFooter>
           </Card>
 
-          <Card className="bg-transparent shadow-rose w-full h-auto sm:w-[96%] lg:w-1/2 font-semibold border-2 border-secondary sm:mt-4 mb-3 sm:mb-0">
+          <Card className="bg-transparent shadow-rose w-full h-auto sm:w-[96%] font-semibold border-2 border-secondary sm:mt-4 mb-3">
             {/* <Image
               src={AuditLogo}
               alt="audit-logo"
@@ -127,6 +127,61 @@ export const AppFeature: React.FC<Props> = () => {
                 </Button>
               </Link>
             </CardFooter>
+          </Card>
+
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-3 sm:mb-0">
+            {/* <Image
+              src={StakeLogo}
+              alt="stake-logo"
+              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
+            /> */}
+            <CardHeader className="card-features-header">
+              Token Launcher
+            </CardHeader>
+            <CardBody className="text-white pt-0">
+              {/* Zero Knowledge Proof's Token Launcher utility offers a seamless
+              platform to create and deploy new tokens or assets within the
+              blockchain network.  */}
+              Empower innovative projects and initiatives by effortlessly
+              launching customizable tokens, fostering growth, and
+              diversification within the ecosystem
+            </CardBody>
+            {/* <CardFooter className="pt-0 mx-auto">
+              <Link href="/staking">
+                <Button
+                  rightIcon={<ArrowRightOutlined />}
+                  className="bg-twilight-horizon hover:bg-night-sky active:bg-night-sky focus:bg-night-sky hover:border-2 hover:border-cyan-500 text-white mt-4 shadow-sunny hover:shadow-rose"
+                >
+                  Stake Now
+                </Button>
+              </Link>
+            </CardFooter> */}
+          </Card>
+
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-3 sm:mb-0">
+            {/* <Image
+              src={JuiceLogo}
+              alt="juice-logo"
+              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
+            /> */}
+            <CardHeader className="card-features-header">
+              Token Locker
+            </CardHeader>
+            <CardBody className="text-white pt-0">
+              Securely store and manage your assets with Zero Knowledge Proof's
+              token locker utility. Safeguard tokens in a protected environment,
+              ensuring enhanced security and peace of mind
+            </CardBody>
+            {/* <CardFooter className="pt-0 mx-auto">
+              <Link href="/bridge">
+                <Button
+                  rightIcon={<ArrowRightOutlined />}
+                  className="bg-night-sky hover:bg-twilight-horizon active:bg-twilight-horizon focus:bg-twilight-horizon border border-cyan-500 hover:border-none text-white mt-4 shadow-sunny hover:shadow-rose"
+                >
+                  Bridge Now
+                </Button>
+              </Link>
+            </CardFooter> */}
           </Card>
 
           {/* <Card className="bg-transparent shadow-rose w-full h-auto sm:w-[47.5%] font-semibold sm:mt-4 border-2 border-secondary">
