@@ -227,7 +227,7 @@ const Scanner: React.FC<Props> = () => {
                       className={`w-5/12 sm:w-[45%] h-8 text-white ${
                         isDisabled && "pointer-events-none"
                       }`}
-                      colorScheme="blue"
+                      colorScheme="cyan"
                       onClick={onScan}
                       isDisabled={isDisabled}
                       isLoading={isScanTokenLoading}

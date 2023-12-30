@@ -214,7 +214,7 @@ export const Information: React.FC<Props> = ({
           <Button
             className={`w-5/12 sm:w-[45%] h-8 text-white`}
             onClick={scanRefetch}
-            colorScheme="blue"
+            colorScheme="cyan"
           >
             Refresh
           </Button>

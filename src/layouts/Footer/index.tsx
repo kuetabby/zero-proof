@@ -39,7 +39,7 @@ const AppFooter: React.FC<Props> = () => {
           </div>
           <div className="w-full sm:w-1/2 flex justify-center sm:justify-end">
             <Link
-              href="https://twitter.com/"
+              href="https://x.com/zpkerctoken"
               target="_blank"
               rel="noopener noreferrer"
               className="w-auto hover:text-yellow-500"
@@ -63,7 +63,7 @@ const AppFooter: React.FC<Props> = () => {
               />
             </Link> */}
             <Link
-              href="https://t.me/"
+              href="https://t.me/zkperc"
               target="_blank"
               rel="noopener noreferrer"
               className="w-auto hover:text-yellow-500 mx-2"
@@ -75,7 +75,7 @@ const AppFooter: React.FC<Props> = () => {
               />
             </Link>
             <Link
-              href="mailto:"
+              href="mailto:team@zeroknowledgeproof.network"
               target="_blank"
               rel="noopener noreferrer"
               className="w-auto hover:text-yellow-500"
