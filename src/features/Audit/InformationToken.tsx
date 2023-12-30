@@ -25,6 +25,7 @@ interface Props {
   is_honeypot?: string;
   buy_tax?: string;
   sell_tax?: string;
+  decimals?: number;
   dex: any;
   chainId: string;
   poolPriceResponse?: DexToolsPoolPriceResponse;
@@ -47,6 +48,7 @@ export const InformationToken: React.FC<Props> = ({
   buy_tax,
   sell_tax,
   dex,
+  decimals,
   total_supply,
   poolPriceResponse,
 }) => {
@@ -58,6 +60,11 @@ export const InformationToken: React.FC<Props> = ({
     buy: buy_tax ? Number(buy_tax) * 100 : "-",
     sell: sell_tax ? Number(sell_tax) * 100 : "-",
   };
+
+  // console.log(
+  //   Math.abs(+Number(poolPrice?.price).toFixed(decimals)),
+  //   "Number(poolPrice?.price).toFixed(decimals)"
+  // );
 
   return (
     <Card className="w-full h-full bg-dark-secondary rounded-lg text-white shadow-sunny">
@@ -157,7 +164,7 @@ export const InformationToken: React.FC<Props> = ({
                         : "text-green-500"
                     }`}
                   >
-                    {!!buy_tax ? (Number(buy_tax) * 100).toFixed(1) : "-"}%
+                    {!!buy_tax ? (Number(buy_tax) * 100).toFixed(1) : "-"} %
                   </span>{" "}
                   Buy
                 </div>
@@ -169,7 +176,7 @@ export const InformationToken: React.FC<Props> = ({
                         : "text-green-500"
                     }`}
                   >
-                    {!!sell_tax ? (Number(sell_tax) * 100).toFixed(1) : "-"}%
+                    {!!sell_tax ? (Number(sell_tax) * 100).toFixed(1) : "-"} %
                   </span>
                   Sell
                 </div>
@@ -188,8 +195,12 @@ export const InformationToken: React.FC<Props> = ({
             <ListItem className="w-full flex flex-col">
               <div className="w-full">Price</div>
               <div className="w-full font-bold ">
-                {!!poolPrice?.price
-                  ? `$ ${Number(poolPrice?.price).toFixed(9)}`
+                {!!poolPrice?.price && !!decimals
+                  ? `$ ${
+                      !!Math.abs(+Number(poolPrice?.price).toFixed(decimals))
+                        ? Number(poolPrice?.price).toFixed(decimals)
+                        : Number(poolPrice?.price).toFixed(18)
+                    }`
                   : "-"}
               </div>
             </ListItem>

@@ -79,7 +79,7 @@ export const Information: React.FC<Props> = ({
     async () => {
       const request = await axios.get(`/api/pool/price`, {
         params: {
-          chain: info.dext,
+          chain: info.dexapi,
           poolAddress: dex[0].pair,
         },
       });
@@ -121,7 +121,7 @@ export const Information: React.FC<Props> = ({
     async () => {
       const request = await axios.get(`/api/token/info`, {
         params: {
-          chain: info.dext,
+          chain: info.dexapi,
           contractAddress,
         },
       });
@@ -153,47 +153,46 @@ export const Information: React.FC<Props> = ({
     }
   );
 
-  // const { data: tokenResponse, isFetching: isTokenLoading } = useQuery<
-  //   DexToolsTokenResponse,
-  //   {}
-  // >(
-  //   [chainId, contractAddress, "token"],
-  //   async () => {
-  //     const request = await axios.get(`/api/token`, {
-  //       params: {
-  //         chain: info.dext,
-  //         contractAddress,
-  //       },
-  //     });
-  //     const response = await request.data;
-  //     // console.log(response, "response");
-  //     return response;
-  //   },
-  //   {
-  //     onError: (error: any) => {
-  //       if (error.response) {
-  //         toast({
-  //           title:
-  //             error.response?.data?.description ??
-  //             `Something went wrong! Please try Again`,
-  //           status: "error",
-  //         });
+  const { data: tokenResponse, isFetching: isTokenLoading } = useQuery<
+    DexToolsTokenResponse,
+    {}
+  >(
+    [chainId, contractAddress, "token"],
+    async () => {
+      const request = await axios.get(`/api/token`, {
+        params: {
+          chain: info.dexapi,
+          contractAddress,
+        },
+      });
+      const response = await request.data;
+      // console.log(response, "response");
+      return response;
+    },
+    {
+      onError: (error: any) => {
+        if (error.response) {
+          toast({
+            title:
+              error.response?.data?.description ??
+              `Something went wrong! Please try Again`,
+            status: "error",
+          });
 
-  //         return error.response?.data?.description;
-  //       }
-  //       toast({
-  //         title: error.message ?? `Something went wrong! Please try Again`,
-  //         status: "error",
-  //       });
+          return error.response?.data?.description;
+        }
+        toast({
+          title: error.message ?? `Something went wrong! Please try Again`,
+          status: "error",
+        });
 
-  //       return error.message;
-  //     },
-  //     enabled: !!chainId && !isEmptyResponse,
-  //     refetchOnWindowFocus: false,
-  //   }
-  // );
-
-  // console.log(tokenResponse, "tokenResponse");
+        return error.message;
+      },
+      enabled:
+        !!chainId && !isEmptyResponse && !!tokenInfoResponse?.data?.totalSupply,
+      refetchOnWindowFocus: false,
+    }
+  );
 
   return (
     <div className="w-full lg:w-[90%] mx-auto mt-10 relative">
@@ -215,7 +214,7 @@ export const Information: React.FC<Props> = ({
           <Button
             className={`w-5/12 sm:w-[45%] h-8 text-white`}
             onClick={scanRefetch}
-            colorScheme="pink"
+            colorScheme="blue"
           >
             Refresh
           </Button>
@@ -253,6 +252,7 @@ export const Information: React.FC<Props> = ({
               is_honeypot={is_honeypot}
               buy_tax={buy_tax}
               sell_tax={sell_tax}
+              decimals={tokenResponse?.data?.decimals}
               poolPriceResponse={poolPriceResponse}
             />
 

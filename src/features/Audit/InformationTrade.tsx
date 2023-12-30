@@ -61,7 +61,7 @@ export const InformationTrade: React.FC<Props> = ({
 
           <div className="w-full">
             <div className="font-semibold text-xl mt-4">Pair</div>
-            {dex && Boolean(dex.length) && (
+            {dex && Boolean(dex.length) ? (
               <Link
                 // href={`${urls.dexTools}/${info.dext}/pair-explorer/${dex[0].pair}`}
                 href={`${info.explorer}/${
@@ -75,12 +75,14 @@ export const InformationTrade: React.FC<Props> = ({
               >
                 {shortenAddress(dex[0].pair)}
               </Link>
+            ) : (
+              "-"
             )}
           </div>
 
           <div className="w-full">
             <div className="font-semibold text-xl mt-4">Last 24 Hours</div>
-            <div className="max-w-[13em] flex flex-wrap justify-between mt-2">
+            <div className="max-w-[20em] flex flex-wrap justify-between mt-2">
               <div className="w-1/2">
                 {poolPrice?.buys24h ? (
                   <>
