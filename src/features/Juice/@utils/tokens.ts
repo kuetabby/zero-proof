@@ -196,7 +196,7 @@ export const list_tokens = [
   },
   {
     ticker: "avax",
-    name: "Avalanche (C-Chain)",
+    name: "Avalanche",
     image: "/uploads/avaxs_4e906c3ad4.svg",
     hasExternalId: false,
     isFiat: false,

@@ -59,7 +59,7 @@ export const AppTokenomics: React.FC<Props> = () => {
                 Name : Zero Knowledge Proof
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-                Total Supply : 100,000,000
+                Total Supply : 10,000,000
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
                 Tax Buy/Sell : 5 %

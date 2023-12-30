@@ -143,7 +143,7 @@ export const StatusOrder: React.FC<Props> = ({
         {!isLoadingStatus && (
           <ModalFooter>
             <Button
-              colorScheme="pink"
+              colorScheme="blue"
               mr={3}
               onClick={() => refetchStatus()}
               isLoading={isLoadingStatus}

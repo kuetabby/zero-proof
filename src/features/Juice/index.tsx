@@ -28,7 +28,7 @@ const initialSendMixer: MixerState = {
   currency: "eth",
   name: "ETH (ERC20)",
   imageUrl: "/uploads/eth_f4ebb54ec0.svg",
-  amount: "0.1",
+  amount: "1",
 };
 
 const initialReceiveMixer: MixerState = {
@@ -207,7 +207,7 @@ const Juice: React.FC<Props> = () => {
       <div id="juice" className="h-12 md:h-20 relative" />
       <div className="w-full md:w-11/12 h-full relative mx-auto">
         <h1 className={`app-juice-title`}>
-          Facilitating Swift Cryptocurrency Exchanges
+          Enabling Rapid and Secure Cryptocurrency Swaps
         </h1>
 
         <div className="h-12 md:h-20 relative" />

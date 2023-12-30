@@ -308,11 +308,11 @@ const Stake: React.FC<Props> = () => {
               <div>Balance: </div>
               <div>{displayTotalBalance}</div>
             </div>
-            <div className="w-full flex justify-between text-pink">
+            <div className="w-full flex justify-between text-cyan-500">
               <div>Lock Period:</div>
               <div>7 days</div>
             </div>
-            <div className="w-full flex justify-between text-pink mb-4">
+            <div className="w-full flex justify-between text-cyan-500 mb-4">
               <div>APY Rewards:</div>
               <div>{displayRewardRatio}</div>
             </div>
@@ -385,15 +385,17 @@ const Stake: React.FC<Props> = () => {
         </Card>
         <div className="w-full md:w-[35%] mt-6 md:mt-0">
           <Card className="bg-dark-secondary border border-cyan-500 text-white font-semibold rounded-2xl">
-            <CardHeader className="pb-0 text-pink">Total Staked</CardHeader>
+            <CardHeader className="pb-0 text-cyan-500">Total Staked</CardHeader>
             <CardBody>{displayTotalStaked}</CardBody>
           </Card>
           <Card className="bg-dark-secondary border border-cyan-500 my-6 text-white font-semibold rounded-2xl">
-            <CardHeader className="pb-0 text-pink">Total Rewards</CardHeader>
+            <CardHeader className="pb-0 text-cyan-500">
+              Total Rewards
+            </CardHeader>
             <CardBody>{displayTotalRewards}</CardBody>
           </Card>
           <Card className="bg-dark-secondary border border-cyan-500 text-white font-semibold rounded-2xl">
-            <CardHeader className="pb-0 text-pink">Unlock Date</CardHeader>
+            <CardHeader className="pb-0 text-cyan-500">Unlock Date</CardHeader>
             <CardBody>{displayUnlockDate}</CardBody>
           </Card>
         </div>

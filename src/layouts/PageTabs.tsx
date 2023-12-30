@@ -41,6 +41,11 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
         pathname: `/staking`,
         name: "STAKING",
       },
+      {
+        href: "/audit",
+        pathname: `/audit`,
+        name: "AUDIT",
+      },
     ];
   }, []);
 

@@ -84,7 +84,7 @@ const Home: React.FC<Props> = () => {
 
         <div className="w-full sm:w-1/2 lg:w-2/5 mt-4 mb-6 text-xs font-semibold text-slate-500">
           Zero Knowledge Proof empowers asset growth through its bridge,
-          staking, token launching, and token locking utilities.
+          staking, and audit tools utilities.
         </div>
         <div className="w-full mt-4 mb-6 text-sm sm:text-base font-semibold text-white">
           {contractAddress}
