@@ -90,7 +90,7 @@ const AppFooter: React.FC<Props> = () => {
         </div>
 
         <div className="all-reserved">
-          <div className="w-full flex flex-wrap justify-end items-center my-2">
+          <div className="w-full flex flex-wrap justify-center sm:justify-end items-center my-2">
             {/* <Link
               href="mailto:admin@juicyfi.network"
               rel="noopener noreferrer"

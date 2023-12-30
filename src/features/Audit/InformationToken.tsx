@@ -164,8 +164,8 @@ export const InformationToken: React.FC<Props> = ({
                         : "text-green-500"
                     }`}
                   >
-                    {!!buy_tax ? (Number(buy_tax) * 100).toFixed(1) : "-"} %
-                  </span>{" "}
+                    {!!buy_tax ? (Number(buy_tax) * 100).toFixed(1) : "- "}%
+                  </span>
                   Buy
                 </div>
                 <div className="border border-white rounded-lg p-1">
@@ -176,7 +176,7 @@ export const InformationToken: React.FC<Props> = ({
                         : "text-green-500"
                     }`}
                   >
-                    {!!sell_tax ? (Number(sell_tax) * 100).toFixed(1) : "-"} %
+                    {!!sell_tax ? (Number(sell_tax) * 100).toFixed(1) : "- "}%
                   </span>
                   Sell
                 </div>

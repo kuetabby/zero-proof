@@ -56,6 +56,11 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
         pathname: `/staking`,
         name: "STAKING",
       },
+      {
+        href: "/audit",
+        pathname: `/audit`,
+        name: "AUDIT",
+      },
     ];
   }, []);
 
