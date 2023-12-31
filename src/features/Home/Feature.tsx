@@ -48,7 +48,7 @@ export const AppFeature: React.FC<Props> = () => {
         </h1>
 
         <div className="w-full md:w-11/12 flex flex-wrap justify-evenly mx-auto mt-10 mb-5">
-          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-3 sm:mb-0">
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-4 sm:mb-0">
             {/* <Image
               src={JuiceLogo}
               alt="juice-logo"
@@ -74,7 +74,7 @@ export const AppFeature: React.FC<Props> = () => {
             </CardFooter>
           </Card>
 
-          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-3 sm:mb-0">
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent">
             {/* <Image
               src={StakeLogo}
               alt="stake-logo"
@@ -101,35 +101,37 @@ export const AppFeature: React.FC<Props> = () => {
             </CardFooter>
           </Card>
 
-          <Card className="bg-transparent shadow-rose w-full h-auto sm:w-[96%] font-semibold border-2 border-secondary sm:mt-4 mb-3">
-            {/* <Image
+          <div className="w-full  my-4">
+            <Card className="bg-transparent shadow-rose w-full sm:w-3/4 lg:w-3/5 xl:w-1/2 h-auto font-semibold border-2 border-secondary mx-auto">
+              {/* <Image
               src={AuditLogo}
               alt="audit-logo"
               className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
             /> */}
-            <CardHeader className="card-features-header">
-              Audit Tools
-            </CardHeader>
-            <CardBody className="text-white pt-0">
-              Zero Knowledge Proof's Audit Tools utility provides robust and
-              meticulous smart contract analysis and examination. Conduct
-              comprehensive audits to identify potential vulnerabilities and
-              errors, ensuring the utmost security and integrity within the
-              blockchain ecosystem
-            </CardBody>
-            <CardFooter className="pt-0 mx-auto">
-              <Link href="/audit">
-                <Button
-                  rightIcon={<ArrowRightOutlined />}
-                  className="bg-twilight-horizon hover:bg-night-sky active:bg-night-sky focus:bg-night-sky text-white mt-4 shadow-sunny hover:shadow-rose"
-                >
-                  Audit Now
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
+              <CardHeader className="card-features-header">
+                Audit Tools
+              </CardHeader>
+              <CardBody className="text-white pt-0">
+                Zero Knowledge Proof's Audit Tools utility provides robust and
+                meticulous smart contract analysis and examination. Conduct
+                comprehensive audits to identify potential vulnerabilities and
+                errors, ensuring the utmost security and integrity within the
+                blockchain ecosystem
+              </CardBody>
+              <CardFooter className="pt-0 mx-auto">
+                <Link href="/audit">
+                  <Button
+                    rightIcon={<ArrowRightOutlined />}
+                    className="bg-twilight-horizon hover:bg-night-sky active:bg-night-sky focus:bg-night-sky text-white mt-4 shadow-sunny hover:shadow-rose"
+                  >
+                    Audit Now
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+          </div>
 
-          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-3 sm:mb-0">
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-4 sm:mb-0">
             {/* <Image
               src={StakeLogo}
               alt="stake-logo"
@@ -158,7 +160,7 @@ export const AppFeature: React.FC<Props> = () => {
             </CardFooter> */}
           </Card>
 
-          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-3 sm:mb-0">
+          <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent">
             {/* <Image
               src={JuiceLogo}
               alt="juice-logo"

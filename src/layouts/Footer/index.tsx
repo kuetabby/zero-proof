@@ -101,7 +101,7 @@ const AppFooter: React.FC<Props> = () => {
             <div className="sm:ml-2 text-xs font-semibold">
               Copyright{" "}
               <CopyrightOutlined className="mx-1" style={{ fontSize: "1em" }} />{" "}
-              2023. All rights reserved.
+              Zero Knowledge Proof | All rights reserved.
             </div>
           </div>
         </div>
