@@ -4,8 +4,8 @@ import Link from "next/link";
 // import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import {
-  LineChartOutlined,
   PauseOutlined,
+  PushpinOutlined,
   SwapRightOutlined,
 } from "@ant-design/icons";
 
@@ -90,19 +90,19 @@ const Home: React.FC<Props> = () => {
           {contractAddress}
         </div>
         <Link
-          href={`http://dextools.io/app/ether/pair-explorer/${pairAddress}`}
+          href="https://x.com/zkperctoken"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button
-            className="w-[8em] bg-twilight-horizon hover:bg-starry-night active:bg-starry-night focus:bg-starry-night text-white shadow-sunny hover:shadow-rose ml-2 sm:ml-0"
-            rightIcon={<LineChartOutlined style={{ fontSize: "1.5em" }} />}
+            className="w-[10em] bg-twilight-horizon hover:bg-starry-night active:bg-starry-night focus:bg-starry-night text-white shadow-sunny hover:shadow-rose"
+            rightIcon={<PushpinOutlined style={{ fontSize: "1.5em" }} />}
           >
-            Chart
+            Latest News
           </Button>
         </Link>
 
-        <Link
+        {/* <Link
           href={`https://app.uniswap.org/tokens/ethereum/${contractAddress}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -113,7 +113,7 @@ const Home: React.FC<Props> = () => {
           >
             Buy Now
           </Button>
-        </Link>
+        </Link> */}
       </div>
 
       <AppFeature />
