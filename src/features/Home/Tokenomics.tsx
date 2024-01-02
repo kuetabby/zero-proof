@@ -62,7 +62,7 @@ export const AppTokenomics: React.FC<Props> = () => {
                 Total Supply : 10,000,000
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-                Tax Buy/Sell : 5 %
+                Tax Buy/Sell : 3 %
               </ListItem>
 
               <Divider className="my-1 text-cyan-500" />
