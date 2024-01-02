@@ -9,6 +9,8 @@ import "./style.css";
 
 interface Props {}
 
+const contractAddress = "0x1ca4B105aba187A5675E0Bb0e4728187fFD37628";
+
 export const AppTokenomics: React.FC<Props> = () => {
   const [isTokensVisible, setIsTokensVisible] = React.useState(false);
 
@@ -41,7 +43,7 @@ export const AppTokenomics: React.FC<Props> = () => {
 
         <List className="text-base lg:text-2xl xl:text-3xl font-semibold xs:px-2 sm:px-0 text-center mt-4">
           <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-            CA : -
+            CA : {contractAddress}
           </ListItem>
         </List>
         <div className="w-full md:w-3/4 flex flex-wrap items-center justify-between mt-6 mb-3 mx-auto">

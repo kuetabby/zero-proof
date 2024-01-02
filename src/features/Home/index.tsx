@@ -23,8 +23,7 @@ import "./style.css";
 
 interface Props {}
 
-const contractAddress = "-";
-const pairAddress = "-";
+const contractAddress = "0x1ca4B105aba187A5675E0Bb0e4728187fFD37628";
 
 const Home: React.FC<Props> = () => {
   const [isWelcomeVisible, setIsWelcomeVisible] = useState(false);

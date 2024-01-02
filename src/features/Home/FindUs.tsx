@@ -12,8 +12,8 @@ import "./style.css";
 
 interface Props {}
 
-const contractAddress = "-";
-const pairAddress = "-";
+const contractAddress = "0x1ca4B105aba187A5675E0Bb0e4728187fFD37628";
+const pairAddress = "0x1b779ce42af4194b3345b1ca04ab2acfe98855d8";
 
 export const AppFindUs: React.FC<Props> = () => {
   const [isContentVisible, setIsContentVisible] = useState(false);
