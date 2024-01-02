@@ -11,9 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
-// import JuiceLogo from "@/assets/logo-mixer.png";
-// import AuditLogo from "@/assets/logo-audit.png";
-// import StakeLogo from "@/assets/logo-stake.png";
+import AuditLogo from "@/assets/logo-audit.png";
+import BridgeLogo from "@/assets/logo-bridge.png";
+import StakeLogo from "@/assets/logo-stake.png";
+import LauncherLogo from "@/assets/logo-launcher.png";
+import LockerLogo from "@/assets/logo-token-locker.png";
 
 import "./style.css";
 
@@ -49,15 +51,15 @@ export const AppFeature: React.FC<Props> = () => {
 
         <div className="w-full md:w-11/12 flex flex-wrap justify-evenly mx-auto mt-10 mb-5">
           <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-4 sm:mb-0">
-            {/* <Image
-              src={JuiceLogo}
-              alt="juice-logo"
-              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
-            /> */}
             <CardHeader className="card-features-header">
               Multichain Bridge
             </CardHeader>
             <CardBody className="text-white pt-0">
+              <Image
+                src={BridgeLogo}
+                alt="bridge-logo"
+                className="w-40 h-40 my-4 mx-auto shadow-sunny"
+              />
               Zero Knowledge Proof's bridge utility seamlessly connects
               disparate blockchain networks, allowing secure and swift asset
               transfers across platforms with enhanced privacy and reliability
@@ -75,15 +77,15 @@ export const AppFeature: React.FC<Props> = () => {
           </Card>
 
           <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent">
-            {/* <Image
-              src={StakeLogo}
-              alt="stake-logo"
-              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
-            /> */}
             <CardHeader className="card-features-header">
               Staking dApp
             </CardHeader>
             <CardBody className="text-white pt-0">
+              <Image
+                src={StakeLogo}
+                alt="stake-logo"
+                className="w-40 h-40 my-4 mx-auto shadow-sunny"
+              />
               Engage in Zero Knowledge Proof's staking utility to earn rewards
               by actively participating in securing the network. Stake your
               assets to support network operations while generating passive
@@ -103,15 +105,15 @@ export const AppFeature: React.FC<Props> = () => {
 
           <div className="w-full  my-4">
             <Card className="bg-transparent shadow-rose w-full sm:w-3/4 lg:w-3/5 xl:w-1/2 h-auto font-semibold border-2 border-secondary mx-auto">
-              {/* <Image
-              src={AuditLogo}
-              alt="audit-logo"
-              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
-            /> */}
               <CardHeader className="card-features-header">
                 Audit Tools
               </CardHeader>
               <CardBody className="text-white pt-0">
+                <Image
+                  src={AuditLogo}
+                  alt="audit-logo"
+                  className="w-40 h-40 my-4 mx-auto shadow-sunny"
+                />
                 Zero Knowledge Proof's Audit Tools utility provides robust and
                 meticulous smart contract analysis and examination. Conduct
                 comprehensive audits to identify potential vulnerabilities and
@@ -132,18 +134,15 @@ export const AppFeature: React.FC<Props> = () => {
           </div>
 
           <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent mb-4 sm:mb-0">
-            {/* <Image
-              src={StakeLogo}
-              alt="stake-logo"
-              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
-            /> */}
             <CardHeader className="card-features-header">
               Token Launcher
             </CardHeader>
             <CardBody className="text-white pt-0">
-              {/* Zero Knowledge Proof's Token Launcher utility offers a seamless
-              platform to create and deploy new tokens or assets within the
-              blockchain network.  */}
+              <Image
+                src={LauncherLogo}
+                alt="launcher-logo"
+                className="w-40 h-40 my-4 mx-auto shadow-sunny"
+              />
               Empower innovative projects and initiatives by effortlessly
               launching customizable tokens, fostering growth, and
               diversification within the ecosystem
@@ -161,15 +160,15 @@ export const AppFeature: React.FC<Props> = () => {
           </Card>
 
           <Card className="bg-night-sky shadow-rose w-full h-auto sm:w-[47.5%] font-semibold border border-transparent">
-            {/* <Image
-              src={JuiceLogo}
-              alt="juice-logo"
-              className="w-40 h-40 mt-4 mx-auto rounded-full shadow-sunny"
-            /> */}
             <CardHeader className="card-features-header">
               Token Locker
             </CardHeader>
             <CardBody className="text-white pt-0">
+              <Image
+                src={LockerLogo}
+                alt="locker-logo"
+                className="w-40 h-40 my-4 mx-auto shadow-sunny"
+              />
               Securely store and manage your assets with Zero Knowledge Proof's
               token locker utility. Safeguard tokens in a protected environment,
               ensuring enhanced security and peace of mind
