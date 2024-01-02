@@ -145,14 +145,14 @@ const Scanner: React.FC<Props> = () => {
               <Card className="w-full h-full md:w-4/5 lg:w-3/5 xl:w-1/2 bg-dark-secondary shadow-sunny rounded-lg mt-4">
                 <CardBody className="pb-0">
                   <div className="w-full flex flex-wrap justify-between">
-                    <div className="w-full sm:w-1/3 lg:w-2/5 flex flex-col">
+                    <div className="w-full sm:w-[35%] lg:w-2/5 flex flex-col">
                       <div className="text-lg text-white">Select Network</div>
                       <Menu>
                         <MenuButton
                           as={Button}
                           rightIcon={<DownOutlined />}
                           transition="all 0.2s"
-                          className="w-full sm:w-11/12 sm:mr-auto mt-2 bg-transparent hover:bg-transparent active:bg-transparent focus:bg-transparent border border-white text-white"
+                          className="w-full lg:w-11/12 sm:mr-auto mt-2 bg-transparent hover:bg-transparent active:bg-transparent focus:bg-transparent border border-white text-white"
                         >
                           {chainId ? (
                             <div className="w-full flex items-center">
