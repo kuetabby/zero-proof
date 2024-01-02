@@ -26,7 +26,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 
 import "./style.css";
 
-const stakingContractAddress = "";
+const stakingContractAddress = "0x8e6623c81429a0606b124013a31a688a05f1a787";
 
 interface Props {}
 
